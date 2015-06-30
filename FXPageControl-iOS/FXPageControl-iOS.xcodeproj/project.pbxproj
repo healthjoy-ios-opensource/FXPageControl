@@ -10,7 +10,10 @@
 		99D329AF1B42932A001B242A /* FXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D329AE1B42932A001B242A /* FXPageControl.m */; };
 		99D329D81B429615001B242A /* FXPageControl-dynamic.h in Headers */ = {isa = PBXBuildFile; fileRef = 99D329D71B429615001B242A /* FXPageControl-dynamic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		99D329EC1B42964B001B242A /* FXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D329AE1B42932A001B242A /* FXPageControl.m */; };
-		99D329ED1B42964D001B242A /* FXPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 99D329AD1B42932A001B242A /* FXPageControl.h */; };
+		99D329ED1B42964D001B242A /* FXPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 99D329AD1B42932A001B242A /* FXPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99D32A161B4296EB001B242A /* FXPageControl-static.h in Headers */ = {isa = PBXBuildFile; fileRef = 99D32A151B4296EB001B242A /* FXPageControl-static.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99D32A2A1B429717001B242A /* FXPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 99D329AD1B42932A001B242A /* FXPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99D32A2B1B42971A001B242A /* FXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D329AE1B42932A001B242A /* FXPageControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +35,9 @@
 		99D329D31B429615001B242A /* FXPageControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FXPageControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99D329D61B429615001B242A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99D329D71B429615001B242A /* FXPageControl-dynamic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FXPageControl-dynamic.h"; sourceTree = "<group>"; };
+		99D32A111B4296EB001B242A /* FXPageControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FXPageControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99D32A141B4296EB001B242A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99D32A151B4296EB001B242A /* FXPageControl-static.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FXPageControl-static.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +55,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		99D32A0D1B4296EB001B242A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -57,6 +70,7 @@
 			children = (
 				99D329AC1B42932A001B242A /* FXPageControl */,
 				99D329D41B429615001B242A /* FXPageControl-dynamic */,
+				99D32A121B4296EB001B242A /* FXPageControl-static */,
 				99D329931B429315001B242A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +80,7 @@
 			children = (
 				99D329921B429315001B242A /* libFXPageControl-iOS.a */,
 				99D329D31B429615001B242A /* FXPageControl.framework */,
+				99D32A111B4296EB001B242A /* FXPageControl.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +112,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		99D32A121B4296EB001B242A /* FXPageControl-static */ = {
+			isa = PBXGroup;
+			children = (
+				99D32A151B4296EB001B242A /* FXPageControl-static.h */,
+				99D32A131B4296EB001B242A /* Supporting Files */,
+			);
+			path = "FXPageControl-static";
+			sourceTree = "<group>";
+		};
+		99D32A131B4296EB001B242A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				99D32A141B4296EB001B242A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -106,6 +138,15 @@
 			files = (
 				99D329D81B429615001B242A /* FXPageControl-dynamic.h in Headers */,
 				99D329ED1B42964D001B242A /* FXPageControl.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99D32A0E1B4296EB001B242A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99D32A161B4296EB001B242A /* FXPageControl-static.h in Headers */,
+				99D32A2A1B429717001B242A /* FXPageControl.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +188,24 @@
 			productReference = 99D329D31B429615001B242A /* FXPageControl.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		99D32A101B4296EB001B242A /* FXPageControl-static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99D32A241B4296EB001B242A /* Build configuration list for PBXNativeTarget "FXPageControl-static" */;
+			buildPhases = (
+				99D32A0C1B4296EB001B242A /* Sources */,
+				99D32A0D1B4296EB001B242A /* Frameworks */,
+				99D32A0E1B4296EB001B242A /* Headers */,
+				99D32A0F1B4296EB001B242A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FXPageControl-static";
+			productName = "FXPageControl-static";
+			productReference = 99D32A111B4296EB001B242A /* FXPageControl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -160,6 +219,9 @@
 						CreatedOnToolsVersion = 6.3.2;
 					};
 					99D329D21B429615001B242A = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					99D32A101B4296EB001B242A = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
 				};
@@ -178,12 +240,20 @@
 			targets = (
 				99D329911B429315001B242A /* FXPageControl-iOS */,
 				99D329D21B429615001B242A /* FXPageControl-dynamic */,
+				99D32A101B4296EB001B242A /* FXPageControl-static */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		99D329D11B429615001B242A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99D32A0F1B4296EB001B242A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -206,6 +276,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				99D329EC1B42964B001B242A /* FXPageControl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99D32A0C1B4296EB001B242A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99D32A2B1B42971A001B242A /* FXPageControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +444,55 @@
 			};
 			name = Release;
 		};
+		99D32A251B4296EB001B242A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FXPageControl-static/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = FXPageControl;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		99D32A261B4296EB001B242A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "FXPageControl-static/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = FXPageControl;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -391,6 +518,14 @@
 			buildConfigurations = (
 				99D329E71B429615001B242A /* Debug */,
 				99D329E81B429615001B242A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		99D32A241B4296EB001B242A /* Build configuration list for PBXNativeTarget "FXPageControl-static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99D32A251B4296EB001B242A /* Debug */,
+				99D32A261B4296EB001B242A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
